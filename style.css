@@ -7,17 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    /* Human-crafted Optical Color Palette (OKLCH Color Space for Natural Chromatic Balance) */
-    --color-bg-base: oklch(14% 0.015 260);          /* Deep obsidian slate #0d0f15 */
-    --color-bg-surface: oklch(18% 0.02 260);       /* Refined surface card #151821 */
-    --color-bg-elevated: oklch(22% 0.025 260);      /* Floating element surface */
+    /* Human-crafted Optical Color Palette (OKLCH & Melancholic Rain Palette) */
+    --color-bg-base: oklch(12% 0.015 250);          /* Deep melancholic night #080a10 */
+    --color-bg-surface: oklch(16% 0.02 250);       /* Cold dark surface card #101420 */
+    --color-bg-elevated: oklch(20% 0.025 250);      /* Floating element surface */
     
-    /* Warm & Natural Accents (Cinema Lighting vs Generic Neon) */
-    --accent-amber: oklch(78% 0.14 75);             /* 3200K Tungsten Studio Light */
-    --accent-indigo: oklch(62% 0.16 265);           /* 5600K Daylight Fill */
-    --accent-teal: oklch(72% 0.11 195);             /* Cinematic Anamorphic Teal */
-    --accent-warm-white: oklch(96% 0.01 80);        /* Soft natural white */
-    --accent-muted: oklch(65% 0.02 260);            /* Neutral slate text */
+    /* Cold Rainy Accents (Melancholic, Cinematic & Somber) */
+    --accent-rain: #38bdf8;                         /* Cold raindrop cyan */
+    --accent-blue: #60a5fa;                         /* Melancholic soft sky */
+    --accent-indigo: #818cf8;                       /* Somber twilight indigo */
+    --accent-mist: #94a3b8;                         /* Muted foggy slate */
+    --accent-warm-white: #f1f5f9;                   /* Muted cold white */
 
     /* Spotlight Default Coordinates */
     --mouse-x: 50%;
@@ -64,7 +64,7 @@ body {
     & .scroll-progress-fill {
         height: 100%;
         width: 100%;
-        background: linear-gradient(90deg, #d97706, #6366f1, #06b6d4);
+        background: linear-gradient(90deg, #38bdf8, #60a5fa, #818cf8);
         transform-origin: 0% 50%;
         transform: scaleX(0);
         will-change: transform;
@@ -130,7 +130,7 @@ body {
         border-radius: inherit;
         background: radial-gradient(
             600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-            rgba(245, 158, 11, 0.08),
+            rgba(56, 189, 248, 0.08),
             transparent 60%
         );
         pointer-events: none;
@@ -143,8 +143,8 @@ body {
         border-color: rgba(255, 255, 255, 0.18);
         box-shadow: 
             inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
-            0 24px 48px -12px rgba(0, 0, 0, 0.75),
-            0 0 25px -5px rgba(217, 119, 6, 0.1);
+            0 24px 48px -12px rgba(0, 0, 0, 0.8),
+            0 0 25px -5px rgba(56, 189, 248, 0.12);
         
         &::before {
             opacity: 1;
@@ -177,7 +177,7 @@ body {
         object-fit: cover;
         object-position: center 25%;
         transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.6s ease;
-        filter: contrast(1.03) saturate(1.05);
+        filter: grayscale(40%) contrast(1.1) brightness(0.92) hue-rotate(-5deg);
     }
 
     /* Cinematic subtle vignette shadow at bottom of image */
@@ -196,6 +196,7 @@ body {
 
 .cinematic-card:hover .member-avatar-frame img {
     transform: scale(1.04);
+    filter: grayscale(10%) contrast(1.15) brightness(1);
 }
 
 /* Editable NIM Badge Styling */
@@ -205,17 +206,17 @@ body {
     gap: 0.375rem;
     padding: 0.3rem 0.75rem;
     border-radius: 0.5rem;
-    background: rgba(12, 15, 24, 0.85);
-    border: 1px dashed rgba(245, 158, 11, 0.4);
+    background: rgba(12, 17, 28, 0.85);
+    border: 1px dashed rgba(56, 189, 248, 0.4);
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
-    color: #fde68a;
+    color: #bae6fd;
     transition: all 0.25s ease;
 
     &:hover {
-        border-color: rgba(245, 158, 11, 0.9);
-        background: rgba(245, 158, 11, 0.1);
-        box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.2);
+        border-color: rgba(56, 189, 248, 0.9);
+        background: rgba(56, 189, 248, 0.12);
+        box-shadow: 0 0 15px -3px rgba(56, 189, 248, 0.25);
     }
 }
 
@@ -237,24 +238,123 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   6. Ambient Light Orbs with Natural Optics
+   6. Ambient Light Orbs with Melancholic Cold Atmosphere
    -------------------------------------------------------------------------- */
+.ambient-glow-rain {
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+}
 .ambient-glow-amber {
-    background: radial-gradient(circle, rgba(217, 119, 6, 0.14) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
 }
 .ambient-glow-indigo {
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
 }
 .ambient-glow-slate {
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(30, 41, 59, 0.25) 0%, transparent 70%);
 }
 
 /* Subtle Grid with Fade Mask */
 .hero-grid-pattern {
     background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 3.5rem 3.5rem;
     mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 20%, transparent 80%);
     -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 20%, transparent 80%);
+}
+
+/* --------------------------------------------------------------------------
+   7. Melancholic Rain Video & Particle Animation Background Engine
+   -------------------------------------------------------------------------- */
+.hero-rain-wrap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-rain-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    mix-blend-mode: screen;
+    filter: brightness(1.1) contrast(1.25);
+    transform: scale(1.04);
+    opacity: 0.9;
+}
+
+/* Multi-plane Parallax Atmospheric Fog / Mist */
+.parallax-fog {
+    position: absolute;
+    inset: -15%;
+    width: 130%;
+    height: 130%;
+    pointer-events: none;
+    z-index: 2;
+    mix-blend-mode: screen;
+}
+
+.fog-layer-1 {
+    background: radial-gradient(ellipse 60% 40% at 35% 55%, rgba(56, 189, 248, 0.08) 0%, transparent 65%);
+    opacity: 0.85;
+    will-change: transform;
+}
+
+.fog-layer-2 {
+    background: radial-gradient(ellipse 55% 45% at 68% 42%, rgba(99, 102, 241, 0.07) 0%, transparent 65%);
+    opacity: 0.75;
+    will-change: transform;
+}
+
+/* High-Definition Rain Particle & Droplet Canvas */
+.hero-rain-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Melancholic Dark Vignette (Keeps animated rain clearly visible) */
+.hero-rain-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    background: linear-gradient(
+        to bottom,
+        rgba(6, 8, 14, 0.5) 0%,
+        rgba(7, 10, 18, 0.22) 35%,
+        rgba(9, 12, 19, 0.75) 80%,
+        #0b0d14 100%
+    );
+    pointer-events: none;
+}
+
+/* Interactive Ambient Streetlight Parallax Beam */
+.mouse-streetlight-beam {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+    background: radial-gradient(
+        500px circle at var(--mouse-screen-x, 50%) var(--mouse-screen-y, 45%),
+        rgba(186, 230, 253, 0.06) 0%,
+        rgba(56, 189, 248, 0.02) 40%,
+        transparent 70%
+    );
+    transition: opacity 0.4s ease;
+}
+
+/* Hero Text Shadow to guarantee crystal-clear legibility over animated rain */
+#hero-content h1 {
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.95), 0 0 50px rgba(56, 189, 248, 0.18);
+}
+
+#hero-content p {
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
 }

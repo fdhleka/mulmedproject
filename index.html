@@ -14,7 +14,7 @@
     <!-- External Custom Modern CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#0b0d14] text-slate-200 antialiased selection:bg-amber-500/30 selection:text-amber-200 relative overflow-x-hidden">
+<body class="bg-[#0b0d14] text-slate-200 antialiased selection:bg-sky-500/30 selection:text-sky-200 relative overflow-x-hidden">
 
     <!-- Native Scroll Progress Indicator (CSS Scroll-Driven) -->
     <div class="scroll-progress-track">
@@ -24,49 +24,49 @@
     <!-- Analog Film Grain (Subtle Texture to eliminate flat AI look) -->
     <div class="film-grain" aria-hidden="true"></div>
 
-    <!-- Parallax Ambient Canvas with Natural Studio Lighting -->
+    <!-- Parallax Ambient Canvas with Somber Melancholic Lighting -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
-        <div id="parallax-bg-grid" class="absolute inset-0 hero-grid-pattern opacity-60"></div>
-        <!-- Warm Studio Keylight (Amber 3200K) -->
-        <div id="bg-orb-1" class="absolute -top-40 -left-40 w-[38rem] h-[38rem] ambient-glow-amber rounded-full blur-[110px] will-change-transform"></div>
-        <!-- Natural Deep Daylight Fill (Indigo 5600K) -->
+        <div id="parallax-bg-grid" class="absolute inset-0 hero-grid-pattern opacity-50"></div>
+        <!-- Cool Rain Glow (Sky Blue 480nm) -->
+        <div id="bg-orb-1" class="absolute -top-40 -left-40 w-[38rem] h-[38rem] ambient-glow-rain rounded-full blur-[110px] will-change-transform"></div>
+        <!-- Somber Midnight Oceanic Fill (Deep Indigo) -->
         <div id="bg-orb-2" class="absolute top-1/3 -right-48 w-[42rem] h-[42rem] ambient-glow-indigo rounded-full blur-[130px] will-change-transform"></div>
-        <!-- Cool Anamorphic Rim Light (Soft Teal) -->
+        <!-- Cold Mist Rim Light (Muted Slate) -->
         <div id="bg-orb-3" class="absolute bottom-20 left-1/3 w-[34rem] h-[34rem] ambient-glow-slate rounded-full blur-[120px] will-change-transform"></div>
     </div>
 
     <!-- Navigation Bar with Frosted Glass -->
-    <header class="fixed top-0 inset-x-0 z-50 transition-all duration-300 backdrop-blur-xl bg-[#0b0d14]/80 border-b border-white/[0.07]">
+    <header class="fixed top-0 inset-x-0 z-50 transition-all duration-300 backdrop-blur-xl bg-[#080a10]/85 border-b border-white/[0.07]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
             <a href="#hero" class="flex items-center gap-3.5 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400/30 via-slate-800 to-indigo-900/60 p-[1px] border border-white/10 group-hover:border-amber-400/40 transition-all duration-300">
-                    <div class="w-full h-full bg-[#10131d] rounded-[11px] flex items-center justify-center text-amber-300">
-                        <i data-lucide="aperture" class="w-5 h-5 transition-transform duration-500 group-hover:rotate-45"></i>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400/30 via-slate-800 to-indigo-900/60 p-[1px] border border-white/10 group-hover:border-sky-400/40 transition-all duration-300">
+                    <div class="w-full h-full bg-[#0d111a] rounded-[11px] flex items-center justify-center text-sky-300">
+                        <i data-lucide="cloud-rain" class="w-5 h-5 transition-transform duration-500 group-hover:scale-110"></i>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <div class="flex items-center gap-2">
-                        <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-amber-200 transition-colors">AuraLens</span>
-                        <span class="px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20">AoL</span>
+                        <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-sky-200 transition-colors">Multimedia</span>
+                        <span class="px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold bg-sky-400/10 text-sky-300 border border-sky-400/20">11</span>
                     </div>
-                    <span class="text-[10px] tracking-wider uppercase text-slate-400 font-mono">Multimedia Systems COMP70840001</span>
+                    <span class="text-[10px] tracking-wider uppercase text-slate-400 font-mono">Multimedia Systems</span>
                 </div>
             </a>
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#video-showcase" class="hover:text-amber-300 transition-colors">Video Showcase</a>
-                <a href="#metadata" class="hover:text-amber-300 transition-colors">Metadata</a>
-                <a href="#elements" class="hover:text-amber-300 transition-colors">4 Elemen Multimedia</a>
-                <a href="#delivery" class="hover:text-amber-300 transition-colors">Delivery Method</a>
-                <a href="#team" class="hover:text-amber-300 transition-colors flex items-center gap-1.5">
+                <a href="#video-showcase" class="hover:text-sky-300 transition-colors">Video Showcase</a>
+                <a href="#metadata" class="hover:text-sky-300 transition-colors">Metadata</a>
+                <a href="#elements" class="hover:text-sky-300 transition-colors">4 Elemen Multimedia</a>
+                <a href="#delivery" class="hover:text-sky-300 transition-colors">Delivery Method</a>
+                <a href="#team" class="hover:text-sky-300 transition-colors flex items-center gap-1.5">
                     <span>Tim Kelompok</span>
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
                 </a>
             </nav>
 
-            <a href="#video-showcase" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white/[0.05] hover:bg-white/[0.1] text-white border border-white/10 hover:border-amber-400/30 transition-all duration-300">
-                <i data-lucide="play" class="w-3.5 h-3.5 fill-amber-300 text-amber-300"></i>
+            <a href="#video-showcase" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-sky-500/10 hover:bg-sky-500/20 text-sky-200 border border-sky-400/20 hover:border-sky-400/40 transition-all duration-300 shadow-sm">
+                <i data-lucide="play" class="w-3.5 h-3.5 fill-sky-300 text-sky-300"></i>
                 <span>Tonton Video</span>
             </a>
         </div>
@@ -75,55 +75,79 @@
     <!-- Main Content -->
     <main class="relative z-10 pt-20">
 
-        <!-- Hero Section with Smooth Momentum Parallax -->
-        <section id="hero" class="relative min-h-[92vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
+        <!-- Hero Section with Melancholic Animated Rain Atmosphere -->
+        <section id="hero" class="relative min-h-[96vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
             
+            <!-- Atmospheric Pure Animated Rain Video (No Characters/Persons) & Particle Engine -->
+            <div class="hero-rain-wrap">
+                <video id="hero-rain-player" autoplay muted loop playsinline class="hero-rain-video">
+                    <source src="rain-particles.mp4" type="video/mp4">
+                    <source src="https://raw.githubusercontent.com/quinsaiz/weather-effect/main/demo/rain.mp4" type="video/mp4">
+                    <source src="rain-weather.mp4" type="video/mp4">
+                    <source src="https://raw.githubusercontent.com/mawaqit/mobile-assets/main/weather-videos/rain.mp4" type="video/mp4">
+                </video>
+                <!-- Multi-plane Cinematic Parallax Mist / Fog Layers -->
+                <div id="parallax-fog-1" class="parallax-fog fog-layer-1"></div>
+                <div id="parallax-fog-2" class="parallax-fog fog-layer-2"></div>
+                <!-- Interactive High-Definition Falling Rain Animation Canvas -->
+                <canvas id="rain-canvas" class="hero-rain-canvas"></canvas>
+                <!-- Cinematic Deep Blue Vignette Overlay -->
+                <div class="hero-rain-overlay"></div>
+                <!-- Interactive Ambient Mouse Streetlight Beam -->
+                <div id="mouse-streetlight" class="mouse-streetlight-beam"></div>
+            </div>
+
             <!-- Floating Parallax Depth Badges (Natural 3D Depth) -->
-            <div id="float-badge-1" class="absolute top-28 left-[8%] hidden lg:flex items-center gap-3.5 px-4 py-3 rounded-2xl bg-[#141724]/90 backdrop-blur-xl border border-white/10 shadow-2xl pointer-events-none transition-transform duration-300">
-                <div class="w-9 h-9 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center border border-amber-400/20">
-                    <i data-lucide="video" class="w-4 h-4"></i>
+            <div id="float-badge-1" class="absolute top-28 left-[6%] hidden lg:flex items-center gap-3.5 px-4 py-3 rounded-2xl bg-[#090d18]/85 backdrop-blur-xl border border-sky-500/20 shadow-2xl pointer-events-none transition-transform duration-300 z-10">
+                <div class="w-9 h-9 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center border border-sky-400/20">
+                    <i data-lucide="cloud-rain" class="w-4 h-4"></i>
                 </div>
                 <div class="text-left">
-                    <p class="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Video Standard</p>
-                    <p class="text-xs font-bold text-slate-100 font-mono">1080p 60fps • 16:9</p>
+                    <p class="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Atmospheric Tone</p>
+                    <p class="text-xs font-bold text-sky-200 font-mono">Melancholic Rain • 1080p60</p>
                 </div>
             </div>
 
-            <div id="float-badge-2" class="absolute bottom-28 right-[8%] hidden lg:flex items-center gap-3.5 px-4 py-3 rounded-2xl bg-[#141724]/90 backdrop-blur-xl border border-white/10 shadow-2xl pointer-events-none transition-transform duration-300">
-                <div class="w-9 h-9 rounded-xl bg-cyan-400/10 text-cyan-400 flex items-center justify-center border border-cyan-400/20">
-                    <i data-lucide="waveform" class="w-4 h-4"></i>
+            <div id="float-badge-2" class="absolute bottom-28 right-[6%] hidden lg:flex items-center gap-3.5 px-4 py-3 rounded-2xl bg-[#090d18]/85 backdrop-blur-xl border border-indigo-500/20 shadow-2xl pointer-events-none transition-transform duration-300 z-10">
+                <div class="w-9 h-9 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center border border-indigo-400/20">
+                    <i data-lucide="disc" class="w-4 h-4 animate-spin" style="animation-duration: 9s;"></i>
                 </div>
                 <div class="text-left">
-                    <p class="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Audio Mastering</p>
-                    <p class="text-xs font-bold text-slate-100 font-mono">Stereo 48 kHz AAC</p>
+                    <p class="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Acoustic Emotion</p>
+                    <p class="text-xs font-bold text-slate-200 font-mono">Sad Ambience • Stereo 2.0</p>
                 </div>
+            </div>
+
+            <!-- Floating Melancholic Quote with Subtle Depth Parallax -->
+            <div id="float-quote" class="absolute top-24 right-[10%] hidden xl:flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#080b14]/75 backdrop-blur-md border border-white/[0.08] text-[11px] font-mono text-slate-400 pointer-events-none z-10 shadow-lg">
+                <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
             </div>
 
             <!-- Hero Center Content -->
-            <div class="max-w-4xl mx-auto text-center" id="hero-content">
-                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-medium bg-amber-400/[0.08] text-amber-200 border border-amber-400/20 mb-8 backdrop-blur-md">
-                    <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                    <span class="font-mono tracking-wide text-[11px]">BINUS University • Multimedia Systems Project</span>
+            <div class="max-w-4xl mx-auto text-center relative z-10" id="hero-content">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-medium bg-sky-950/60 text-sky-200 border border-sky-400/25 mb-8 backdrop-blur-md shadow-lg">
+                    <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+                    <span class="font-mono tracking-wide text-[11px]">BINUS University • Multimedia Systems Melancholic Showcase</span>
                 </div>
 
-                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-                    Cinematic Vision, <br />
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-100 to-indigo-200">
-                        Engineered Precision
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.12]">
+                    Ketika Cerita Berakhir, <br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-200 via-slate-300 to-indigo-300">
+                        Hanya Rintik yang Tersisa
                     </span>
                 </h1>
 
                 <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-                    Karya video komprehensif mengintegrasikan empat elemen multimedia inti: teks, audio stereo terkalibrasi, sinematografi dinamis, dan motion graphics terstandarisasi 60 FPS.
+                    Sebuah narasi sinematik melankolis tentang kehilangan, waktu, dan kenangan sunyi — diekspresikan melalui integrasi empat elemen multimedia: tipografi puitis, audio stereo terkalibrasi (-14 LUFS), sinematografi muram, dan motion graphics 60 FPS.
                 </p>
 
                 <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="#video-showcase" class="px-8 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-lg shadow-amber-500/20 hover:shadow-amber-400/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2">
+                    <a href="#video-showcase" class="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-bold shadow-lg shadow-sky-500/20 hover:shadow-sky-400/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2">
                         <i data-lucide="play" class="w-4 h-4 fill-slate-950"></i>
                         <span>Putar Video Karya</span>
                     </a>
-                    <a href="#team" class="px-8 py-3.5 rounded-2xl bg-white/[0.05] hover:bg-white/[0.1] text-slate-200 font-semibold border border-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2">
-                        <i data-lucide="users" class="w-4 h-4 text-amber-300"></i>
+                    <a href="#team" class="px-8 py-3.5 rounded-2xl bg-white/[0.05] hover:bg-white/[0.1] text-slate-200 font-semibold border border-white/10 hover:border-sky-400/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2">
+                        <i data-lucide="users" class="w-4 h-4 text-sky-300"></i>
                         <span>Profil Anggota Tim (3)</span>
                     </a>
                 </div>
@@ -133,10 +157,10 @@
         <!-- Video Showcase Section -->
         <section id="video-showcase" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
             <div class="text-center mb-12">
-                <span class="text-xs uppercase tracking-widest font-mono text-amber-400 font-semibold">Video Showcase</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Karya Video Multimedia</h2>
+                <span class="text-xs uppercase tracking-widest font-mono text-sky-400 font-semibold">Cinematic Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Karya Video & Narasi Emosional</h2>
                 <p class="text-slate-400 max-w-xl mx-auto mt-3 text-sm">
-                    Streaming video beresolusi tinggi di-host melalui Vimeo Player API untuk menjamin kestabilan bitrate dan kualitas audio stereo tanpa kompresi berlebih.
+                    Streaming video resolusi tinggi di-host melalui Vimeo Player API untuk menjaga integritas color grading muram dan kejernihan audio stereo tanpa kompresi berlebih.
                 </p>
             </div>
 
@@ -155,9 +179,9 @@
             </div>
 
             <!-- Vimeo Link Tester Input -->
-            <div class="mt-6 p-4 rounded-2xl bg-[#121520]/80 border border-white/[0.08] backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="mt-6 p-4 rounded-2xl bg-[#101422]/80 border border-white/[0.08] backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-3 text-xs text-slate-400">
-                    <i data-lucide="link-2" class="w-4 h-4 text-amber-400"></i>
+                    <i data-lucide="link-2" class="w-4 h-4 text-sky-400"></i>
                     <span>Ingin mengganti video dengan link Vimeo kelompok Anda?</span>
                 </div>
                 <div class="flex w-full sm:w-auto items-center gap-2">
@@ -165,11 +189,11 @@
                         type="text" 
                         id="vimeo-input-url" 
                         placeholder="Contoh: https://vimeo.com/76979871" 
-                        class="w-full sm:w-72 px-3.5 py-2 text-xs rounded-xl bg-black/60 border border-white/10 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-amber-400 font-mono transition-colors"
+                        class="w-full sm:w-72 px-3.5 py-2 text-xs rounded-xl bg-black/60 border border-white/10 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-sky-400 font-mono transition-colors"
                     />
                     <button 
                         id="update-vimeo-btn"
-                        class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap shadow-md">
+                        class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap shadow-md">
                         <i data-lucide="check" class="w-3.5 h-3.5"></i>
                         <span>Update Player</span>
                     </button>
@@ -180,7 +204,7 @@
         <!-- Technical Metadata Section -->
         <section id="metadata" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <span class="text-xs uppercase tracking-widest font-mono text-cyan-400 font-semibold">Technical Specifications</span>
+                <span class="text-xs uppercase tracking-widest font-mono text-sky-400 font-semibold">Technical Specifications</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Parameter & Metadata Teknis</h2>
                 <p class="text-slate-400 max-w-2xl mx-auto mt-3 text-sm">
                     Rincian spesifikasi teknis video sesuai rubrik penilaian kurikulum AoL Multimedia Systems:
@@ -191,12 +215,12 @@
                 <!-- Resolution Card -->
                 <div class="cinematic-card tilt-card p-6 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center mb-5 border border-amber-400/20">
+                        <div class="w-12 h-12 rounded-xl bg-sky-400/10 text-sky-400 flex items-center justify-center mb-5 border border-sky-400/20">
                             <i data-lucide="maximize" class="w-6 h-6"></i>
                         </div>
                         <p class="text-[11px] font-mono uppercase text-slate-400 tracking-wider">Display Resolution</p>
                         <h3 class="text-2xl font-bold text-white mt-1 font-mono">1920 × 1080</h3>
-                        <p class="text-xs text-amber-300 font-medium mt-1">Full HD (1080p) • Rasio 16:9</p>
+                        <p class="text-xs text-sky-300 font-medium mt-1">Full HD (1080p) • Rasio 16:9</p>
                         <p class="text-xs text-slate-400 mt-4 leading-relaxed">
                             Standar rasio layar sinematik lanskap yang optimal untuk display desktop dan integrasi pemutaran web responsif.
                         </p>
@@ -253,7 +277,7 @@
         <!-- Multimedia Elements Section -->
         <section id="elements" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <span class="text-xs uppercase tracking-widest font-mono text-amber-400 font-semibold">Rubric Breakdown</span>
+                <span class="text-xs uppercase tracking-widest font-mono text-sky-400 font-semibold">Rubric Breakdown</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Implementasi 4 Elemen Multimedia</h2>
                 <p class="text-slate-400 max-w-2xl mx-auto mt-3 text-sm">
                     Penerapan empat pilar utama konten multimedia sesuai kriteria penilaian:
@@ -263,13 +287,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Text Element -->
                 <div class="cinematic-card p-8 flex gap-6 items-start">
-                    <div class="p-3.5 rounded-2xl bg-amber-400/10 text-amber-400 shrink-0 border border-amber-400/20">
+                    <div class="p-3.5 rounded-2xl bg-sky-400/10 text-sky-400 shrink-0 border border-sky-400/20">
                         <i data-lucide="type" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-white">1. Elemen Teks (Typography & Subtitles)</h3>
                         <p class="text-slate-400 text-sm mt-2 leading-relaxed">
-                            Menggunakan tipografi modern sans-serif dengan rasio kontras tinggi (WCAG AAA compliant), lower-third titles untuk penamaan narasumber, serta subtitle bilingual terintegrasi demi kemudahan akses penonton.
+                            Menggunakan tipografi modern sans-serif dengan rasio kontras tinggi (WCAG AAA compliant), narasi puitis, lower-third titles, serta subtitle bilingual terintegrasi demi mempertegas emosi adegan.
                         </p>
                     </div>
                 </div>
@@ -280,9 +304,9 @@
                         <i data-lucide="music-2" class="w-6 h-6"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-white">2. Elemen Audio (Voice & Sound Effects)</h3>
+                        <h3 class="text-xl font-bold text-white">2. Elemen Audio (Voice & Ambient Foley)</h3>
                         <p class="text-slate-400 text-sm mt-2 leading-relaxed">
-                            Melibatkan rekaman voice-over terkompresi dengan dynamic range limiter, foley sound effects terisolasi, serta musik latar (BGM) bebas royalti yang di-mixing menggunakan standar LUFS terstandarisasi (-14 LUFS).
+                            Melibatkan rekaman voice-over emosional terkompresi dengan dynamic range limiter, foley rintik hujan terisolasi, serta musik latar melankolis (BGM) bebas royalti yang di-mixing pada standar LUFS terstandarisasi (-14 LUFS).
                         </p>
                     </div>
                 </div>
@@ -295,20 +319,20 @@
                     <div>
                         <h3 class="text-xl font-bold text-white">3. Elemen Video (Cinematography)</h3>
                         <p class="text-slate-400 text-sm mt-2 leading-relaxed">
-                            Penerapan kaidah komposisi visual seperti Rule of Thirds, kedalaman ruang (shallow depth of field), color grading terkalibrasi rec.709, serta transisi match-cut yang dinamis antarsekuens rekaman.
+                            Penerapan kaidah komposisi visual seperti Rule of Thirds, shallow depth of field, color grading bernuansa moody cool rec.709, serta transisi slow match-cut yang memperdalam resonansi emosional penonton.
                         </p>
                     </div>
                 </div>
 
                 <!-- Animation Element -->
                 <div class="cinematic-card p-8 flex gap-6 items-start">
-                    <div class="p-3.5 rounded-2xl bg-rose-400/10 text-rose-400 shrink-0 border border-rose-400/20">
+                    <div class="p-3.5 rounded-2xl bg-slate-400/10 text-slate-300 shrink-0 border border-slate-400/20">
                         <i data-lucide="sparkles" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-white">4. Elemen Animasi (Motion Graphics)</h3>
                         <p class="text-slate-400 text-sm mt-2 leading-relaxed">
-                            Penyisipan motion graphics 2D pada intro logo, diagram alur data, transisi kinetic typography, dan efek visual pendukung yang dirender pada 60 FPS untuk mempertahankan estetika gerak yang halus.
+                            Penyisipan motion graphics 2D pada intro judul, efek partikel gerimis tipis, transisi kinetic typography, dan efek visual atmosferik yang dirender pada 60 FPS untuk mempertahankan estetika gerak yang halus.
                         </p>
                     </div>
                 </div>
@@ -319,13 +343,13 @@
         <section id="delivery" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="cinematic-card p-10 sm:p-14 relative overflow-hidden">
                 <div class="max-w-3xl relative z-10">
-                    <span class="text-xs uppercase tracking-widest font-mono text-amber-400 font-semibold">Evaluation Criteria 4</span>
+                    <span class="text-xs uppercase tracking-widest font-mono text-sky-400 font-semibold">Evaluation Criteria 4</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Analisis Multimedia Delivery Method</h2>
                     
                     <div class="space-y-6 mt-8 text-slate-300 text-sm leading-relaxed">
                         <div class="flex items-start gap-4">
-                            <div class="w-9 h-9 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center shrink-0 mt-1 border border-amber-400/20">
-                                <i data-lucide="cloud" class="w-4 h-4"></i>
+                            <div class="w-9 h-9 rounded-xl bg-sky-400/10 text-sky-400 flex items-center justify-center shrink-0 mt-1 border border-sky-400/20">
+                                <i data-lucide="cloud-rain" class="w-4 h-4"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-white text-base">Adaptive Bitrate Streaming (ABR via CDN)</h4>
@@ -354,7 +378,7 @@
         <!-- Team Members Section (Evan, Fadhil, Misel) -->
         <section id="team" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <span class="text-xs uppercase tracking-widest font-mono text-amber-400 font-semibold">Project Collaborators</span>
+                <span class="text-xs uppercase tracking-widest font-mono text-sky-400 font-semibold">Project Collaborators</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Anggota Kelompok</h2>
                 <p class="text-slate-400 max-w-lg mx-auto mt-3 text-sm">
                     Tim pengembang proyek tugas akhir Assessment of Learning (AoL) Multimedia Systems (3 Anggota):
@@ -367,12 +391,12 @@
                 <div class="cinematic-card tilt-card p-6 text-center group flex flex-col justify-between">
                     <div>
                         <!-- Foto Evan -->
-                        <div class="member-avatar-frame mb-5 group-hover:border-amber-400/40 transition-colors">
+                        <div class="member-avatar-frame mb-5 group-hover:border-sky-400/40 transition-colors">
                             <img 
                                 src="evan.jpg" 
                                 alt="Evan" 
                                 loading="lazy"
-                                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-3xl font-extrabold text-amber-300 font-mono\'>EVAN</div>';"
+                                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-3xl font-extrabold text-sky-300 font-mono\'>EVAN</div>';"
                             />
                         </div>
 
@@ -382,15 +406,15 @@
                         <!-- EDIT NIM EVAN DI SINI -->
                         <div class="mt-2.5 flex justify-center">
                             <span class="nim-badge" title="Ganti teks ini dengan NIM asli Evan di index.html">
-                                <i data-lucide="hash" class="w-3 h-3 text-amber-400"></i>
+                                <i data-lucide="hash" class="w-3 h-3 text-sky-400"></i>
                                 <span>NIM:</span>
-                                <span class="font-bold underline decoration-amber-400/50 decoration-dashed">
+                                <span class="font-bold underline decoration-sky-400/50 decoration-dashed">
                                     2902726132
                                 </span>
                             </span>
                         </div>
 
-                        <div class="mt-4 inline-block px-3 py-1 rounded-full text-[11px] font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20">
+                        <div class="mt-4 inline-block px-3 py-1 rounded-full text-[11px] font-semibold bg-sky-400/10 text-sky-300 border border-sky-400/20">
                             Video Director & Cinematographer
                         </div>
 
